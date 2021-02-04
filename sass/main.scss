@@ -1,0 +1,24 @@
+@import 'global';
+
+.main{
+    position: relative;
+    height: 72vh;
+    
+    .container{
+        margin: 0 auto;
+        margin-top: 5%;
+        width: 90%;
+        position: relative;
+        
+        .banner{
+            width: 100%;
+            position: relative;
+            .container{
+                .bannerImg{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}

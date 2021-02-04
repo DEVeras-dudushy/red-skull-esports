@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Work+Sans:300,400,700,900");
 @font-face{
-    font-family: Handel Gothic;
-    src: url(../fonts/Handel_Gothic.ttf);
+    font-family: Sofia Light;
+    src: url(../fonts/sofiapro-light.otf);
 }
 
 html {
@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Sofia Light';
     min-height: 100%;
     outline-width: 0;
     margin: 0;
@@ -17,6 +17,7 @@ body {
     line-height: 100%;
     position: relative;
     padding: 0;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
