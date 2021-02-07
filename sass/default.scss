@@ -6,11 +6,16 @@ body{
     background-color: $primary-color;
 }
 
+.conteudo{
+    position: relative;
+}
+
 a{
    color: white; 
    font-weight: bold;
    text-decoration: none;
    text-transform: uppercase;
+   text-shadow: 2px 2px $color2;
 
    &:hover{
         color: $tertiary-color;

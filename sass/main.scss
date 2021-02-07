@@ -14,8 +14,101 @@
             width: 100%;
             position: relative;
             .container{
+                position: relative;
                 .bannerImg{
-                    width: 100%;
+                    // border: 10px solid transparent;
+                    // border-image: url(../images/border-header.svg) 30 round;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+
+        .blocosNoticias{
+            width: 100%;
+            margin-top: 1rem;
+            position: relative;
+            .container{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                .blocoNoticia{
+                    position: relative;
+                    border-radius: .5rem;
+                    width: 20%;
+                    cursor: pointer;
+                    letter-spacing: 0.5rem;
+                    margin-left: 1%;
+                    margin-right: 1%;
+                    
+
+                    img{
+                        position: relative;
+                        border-radius: .5rem;
+                        width: 100%;
+                        opacity:0.5;
+                        transition: all .2s;
+
+                    }
+
+                    span{
+                        color: white;
+                        position: absolute;
+                        font-weight: bolder;
+                        font-size: 1.1rem;
+                        transition: all .3s;
+                        width: 100%;
+                        text-align: center;
+                        text-transform: uppercase;
+                        text-shadow: 2px 2px $color2;
+                
+                        &.titulo{
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 4; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                        }
+
+                        &.botao{
+                            display: none;
+                            top: 60%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }   
+
+
+                    &:hover{
+                        
+                        img{
+                            opacity:0.3;
+                            // transform: scale(1.1);
+
+                        }
+
+                        span{
+
+                            &.titulo{
+                                top: 25%;
+                                left: 50%;
+                            }
+
+                            &.botao{
+                                display: block;
+                                top: 75%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                        
+                    }
+
                 }
             }
         }
