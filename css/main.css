@@ -349,18 +349,21 @@ img {
         position: relative; }
         .main .container .banner .container .bannerImg {
           max-width: 100%;
-          max-height: 100%; }
+          max-height: 100%;
+          border: 1px solid #a3a1a0;
+          border-radius: .1rem; }
     .main .container .blocosNoticias {
-      width: 100%;
-      margin-top: 1rem;
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 5%;
       position: relative; }
-      .main .container .blocosNoticias .container {
+      .main .container .blocosNoticias .containerNoticias {
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap; }
-        .main .container .blocosNoticias .container .blocoNoticia {
+        .main .container .blocosNoticias .containerNoticias .blocoNoticia {
           position: relative;
           border-radius: .5rem;
           width: 20%;
@@ -368,23 +371,24 @@ img {
           letter-spacing: 0.5rem;
           margin-left: 1%;
           margin-right: 1%; }
-          .main .container .blocosNoticias .container .blocoNoticia img {
+          .main .container .blocosNoticias .containerNoticias .blocoNoticia img {
             position: relative;
             border-radius: .5rem;
             width: 100%;
             opacity: 0.5;
-            transition: all .2s; }
-          .main .container .blocosNoticias .container .blocoNoticia span {
+            transition: all .2s;
+            border: 1px solid #a3a1a0; }
+          .main .container .blocosNoticias .containerNoticias .blocoNoticia span {
             color: white;
             position: absolute;
             font-weight: bolder;
             font-size: 1.1rem;
             transition: all .3s;
-            width: 100%;
+            width: 90%;
             text-align: center;
             text-transform: uppercase;
             text-shadow: 2px 2px #a31e1e; }
-            .main .container .blocosNoticias .container .blocoNoticia span.titulo {
+            .main .container .blocosNoticias .containerNoticias .blocoNoticia span.titulo {
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
@@ -394,20 +398,123 @@ img {
               -webkit-line-clamp: 4;
               /* number of lines to show */
               -webkit-box-orient: vertical; }
-            .main .container .blocosNoticias .container .blocoNoticia span.botao {
+            .main .container .blocosNoticias .containerNoticias .blocoNoticia span.botao {
               display: none;
               top: 60%;
               left: 50%;
               transform: translate(-50%, -50%); }
-          .main .container .blocosNoticias .container .blocoNoticia:hover img {
-            opacity: 0.3; }
-          .main .container .blocosNoticias .container .blocoNoticia:hover span.titulo {
+          .main .container .blocosNoticias .containerNoticias .blocoNoticia:hover img {
+            opacity: 0.3;
+            border: 1px solid #a31e1e; }
+          .main .container .blocosNoticias .containerNoticias .blocoNoticia:hover span.titulo {
             top: 25%;
             left: 50%; }
-          .main .container .blocosNoticias .container .blocoNoticia:hover span.botao {
+          .main .container .blocosNoticias .containerNoticias .blocoNoticia:hover span.botao {
             display: block;
             top: 75%;
             left: 50%;
             transform: translate(-50%, -50%); }
+    .main .container .blocosTimes {
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 5%;
+      position: relative; }
+      .main .container .blocosTimes * {
+        transition: all .2s; }
+      .main .container .blocosTimes .timesHeader {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 2%; }
+        .main .container .blocosTimes .timesHeader .tituloHeader {
+          font-size: 1.3rem;
+          font-weight: bold; }
+          .main .container .blocosTimes .timesHeader .tituloHeader span {
+            color: #a31e1e; }
+        .main .container .blocosTimes .timesHeader .botaoHeader button {
+          padding: 1rem;
+          background: #a31e1e;
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: bold;
+          cursor: pointer;
+          outline: none;
+          border: none; }
+          .main .container .blocosTimes .timesHeader .botaoHeader button:hover {
+            background: white;
+            color: black; }
+      .main .container .blocosTimes .containerHeader {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; }
+        .main .container .blocosTimes .containerHeader .blocoTime {
+          position: relative;
+          border-radius: .5rem;
+          width: 25%;
+          cursor: pointer;
+          letter-spacing: 0.5rem;
+          margin-left: 1%;
+          margin-right: 1%; }
+          .main .container .blocosTimes .containerHeader .blocoTime .jogoImg {
+            position: relative;
+            border-radius: .5rem;
+            width: 100%;
+            opacity: 0.5;
+            transition: all .2s;
+            border: 1px solid #a3a1a0; }
+          .main .container .blocosTimes .containerHeader .blocoTime .jogoLogo {
+            position: absolute;
+            border-radius: .5rem;
+            width: 60%;
+            opacity: 0.7;
+            transition: all .2s;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+          .main .container .blocosTimes .containerHeader .blocoTime .integrante {
+            color: white;
+            position: absolute;
+            font-weight: bolder;
+            font-size: 0.9rem;
+            transition: all .3s;
+            width: 90%;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 0px 0px #a31e1e;
+            top: 60%;
+            left: 50%;
+            line-height: 2rem;
+            transform: translate(-50%, -50%); }
+          .main .container .blocosTimes .containerHeader .blocoTime .botao {
+            color: white;
+            position: absolute;
+            font-weight: bolder;
+            font-size: 1.1rem;
+            transition: all .3s;
+            width: 90%;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px #a31e1e;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none; }
+          .main .container .blocosTimes .containerHeader .blocoTime:hover {
+            background: #080e10; }
+            .main .container .blocosTimes .containerHeader .blocoTime:hover .jogoImg {
+              border: 1px solid #a31e1e; }
+            .main .container .blocosTimes .containerHeader .blocoTime:hover .jogoLogo {
+              opacity: 1; }
+            .main .container .blocosTimes .containerHeader .blocoTime:hover .integrante {
+              text-shadow: 2px 2px #a31e1e; }
+            .main .container .blocosTimes .containerHeader .blocoTime:hover .botao {
+              display: block; }
 
 /*# sourceMappingURL=main.css.map */

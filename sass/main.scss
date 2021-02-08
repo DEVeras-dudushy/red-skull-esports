@@ -20,15 +20,18 @@
                     // border-image: url(../images/border-header.svg) 30 round;
                     max-width: 100%;
                     max-height: 100%;
+                    border: 1px solid #a3a1a0;
+                    border-radius: .1rem;
                 }
             }
         }
 
         .blocosNoticias{
-            width: 100%;
-            margin-top: 1rem;
+            margin: 0 auto;
+            width: 90%;
+            margin-top: 5%;
             position: relative;
-            .container{
+            .containerNoticias{
                 position: relative;
                 display: flex;
                 justify-content: space-between;
@@ -50,6 +53,7 @@
                         width: 100%;
                         opacity:0.5;
                         transition: all .2s;
+                        border: 1px solid #a3a1a0;
 
                     }
 
@@ -59,7 +63,7 @@
                         font-weight: bolder;
                         font-size: 1.1rem;
                         transition: all .3s;
-                        width: 100%;
+                        width: 90%;
                         text-align: center;
                         text-transform: uppercase;
                         text-shadow: 2px 2px $color2;
@@ -89,6 +93,7 @@
                         img{
                             opacity:0.3;
                             // transform: scale(1.1);
+                            border: 1px solid $color2;
 
                         }
 
@@ -112,6 +117,147 @@
                 }
             }
         }
+
+        
+        .blocosTimes{
+            margin: 0 auto;
+            width: 90%;
+            margin-top: 5%;
+            position: relative;
+            
+            *{
+                transition: all .2s;
+            }
+
+            .timesHeader{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 2%;
+
+                .tituloHeader{
+                    font-size: 1.3rem;
+                    font-weight: bold;
+
+                    span{
+                        color: $color2;
+                    }
+                }
+
+                .botaoHeader{
+                    
+                    button{
+                        padding: 1rem;
+                        background: $color2;
+                        border: none;
+                        color: white;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        cursor: pointer;
+                        outline: none;
+                        border: none;
+                        
+                        &:hover{
+                            background: white;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .containerHeader{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                .blocoTime{
+                    position: relative;
+                    border-radius: .5rem;
+                    width: 25%;
+                    cursor: pointer;
+                    letter-spacing: 0.5rem;
+                    margin-left: 1%;
+                    margin-right: 1%;
+
+                    .jogoImg{
+                        position: relative;
+                        border-radius: .5rem;
+                        width: 100%;
+                        opacity:0.5;
+                        transition: all .2s;
+                        border: 1px solid $color5;
+                    }
+
+                    .jogoLogo{
+                        position: absolute;
+                        border-radius: .5rem;
+                        width: 60%;
+                        opacity:0.7;
+                        transition: all .2s;
+                        top: 20%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    .integrante{
+                        color: white;
+                        position: absolute;
+                        font-weight: bolder;
+                        font-size: 0.9rem;
+                        transition: all .3s;
+                        width: 90%;
+                        text-align: center;
+                        text-transform: uppercase;
+                        text-shadow: 0px 0px $color2;
+                        top: 60%;
+                        left: 50%;
+                        line-height: 2rem;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    .botao{
+                        color: white;
+                        position: absolute;
+                        font-weight: bolder;
+                        font-size: 1.1rem;
+                        transition: all .3s;
+                        width: 90%;
+                        text-align: center;
+                        text-transform: uppercase;
+                        text-shadow: 2px 2px $color2;
+                        top: 90%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        display: none;
+                    }
+
+                    &:hover{
+                        background: $secundary-color;
+                        .jogoImg{
+                            border: 1px solid $color2;
+                        }
+
+                        .jogoLogo{
+                            opacity:1;
+                        }
+
+                        .integrante{
+                            text-shadow: 2px 2px $color2;
+                        }
+
+                        .botao{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+
 
     }
 }
